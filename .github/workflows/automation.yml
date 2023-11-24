@@ -20,4 +20,4 @@ jobs:
         run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/common-material-module
 
       - name: Docker Push
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/common-material-module
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/angular-kubernetes-test
