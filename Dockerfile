@@ -7,5 +7,5 @@ RUN npm run build
 
 # stage two
 FROM nginx:alpine
-COPY --from=build /usr/local/app/dist/common-material-module-angular /usr/share/nginx/html
+COPY --from=build /usr/local/app/dist/angular-kubernetes-test /usr/share/nginx/html
 EXPOSE 80
