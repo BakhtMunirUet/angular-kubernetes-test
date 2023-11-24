@@ -17,7 +17,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/common-material-module
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/angular-kubernetes-test
 
       - name: Docker Push
         run: docker push ${{ secrets.DOCKER_USERNAME }}/angular-kubernetes-test
